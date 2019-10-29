@@ -1,0 +1,5 @@
+br\com\wesp32\entity\AlunoEntity.class
+br\com\wesp32\http\Aluno.class
+br\com\wesp32\repository\AlunoRepository.class
+br\com\wesp32\controller\Auth0.class
+br\com\wesp32\controller\ServiceController.class
