@@ -1,5 +1,6 @@
 package br.com.wesp32.entity;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,8 +33,11 @@ public class PresencaEntity {
 	@Column(name = "sala_pre")
 	private String sala_pre;
 
-	public Date getData_pre() {
-		return data_pre;
+	public String getData_pre() {
+		SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		String Calibragemveiculo = formatador.format(data_pre);
+		
+		return Calibragemveiculo;
 	}
 
 	public void setData_pre(Date data_pre) {
